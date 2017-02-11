@@ -26,6 +26,7 @@ brew install the_silver_searcher
 brew install fzf
 brew install git
 brew install tmux
+brew install node
 brew install zsh
 brew install nvm
 brew install youtube-dl
