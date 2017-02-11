@@ -49,3 +49,52 @@ let g:syntastic_check_on_wq = 0
 
 "change color scheme
 colorscheme OceanicNext
+
+"""""""""""""""""""""""""""""
+" => BASIC SETTINGS        
+" """"""""""""""""""""""""""
+
+" Show current line number
+set number
+
+" Show relative line numbers
+set relativenumber
+
+" Highlight cursor current line
+set cursorline
+
+" Set to auto read when a file is changed from the outside
+set autoread
+""""""""""""""""""""""""""""""
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""
+" => TEXT, TAB, AND INDENT RELATED
+" """"""""""""""""""""""""""""""""""""""""""""""""""
+
+" Use spaces instead of tabs
+set expandtab
+
+" Be smart when using tabs
+set smarttab
+
+" Number of spaces to use for indent and unindent
+set shiftwidth=2
+" Visible width of tabs
+set tabstop=2
+
+" Linebreak on 500 characters
+set lbr
+set tw=500
+autocmd BufRead,BufNewFile *.md setlocal textwidth=80
+
+set ai "Auto indent
+set si "Smart indent
+set wrap "Wrap lines
+
+" Strip trailing spaces on save
+autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
+
+" Automatically recognize filetypes by extension
+autocmd BufRead,BufNewFile .{babel,eslint,stylelint}rc set filetype=json
+
