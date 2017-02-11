@@ -58,7 +58,10 @@ colorscheme OceanicNext
 set number
 
 " Show relative line numbers
-set relativenumber
+" set relativenumber
+
+" use mouse scroll
+set mouse=a
 
 " Highlight cursor current line
 set cursorline
